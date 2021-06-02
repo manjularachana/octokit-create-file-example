@@ -21,11 +21,11 @@ const main = async () => {
       message: "feat: Added OUTPUT.md programatically",
       content: contentEncoded,
       committer: {
-        name: "manjularachana",
+        name: "master",
         email: "rachanasales4c@gmail.com",
       },
       author: {
-        name: "manjularachana",
+        name: "master",
         email: "rachanasales4c@gmail.com",
       },
     });
