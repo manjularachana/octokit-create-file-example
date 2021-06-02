@@ -10,14 +10,14 @@ const octokit = new Octokit({
 
 const main = async () => {
   try {
-    const content = fs.readFileSync("/home/rachana/file1", "utf-8");
+    const content = fs.readFileSync("./input.txt", "utf-8");
     const contentEncoded = Base64.encode(content);
 
     const { data } = await octokit.repos.createOrUpdateFileContents({
       // replace the owner and email with your own details
       owner: "manjularachana",
       repo: "octokit-create-file-example",
-      path: "OUTPUT.md",
+      path: "README.md",
       message: "feat: Added OUTPUT.md programatically",
       content: contentEncoded,
       committer: {
