@@ -16,7 +16,7 @@ const main = async () => {
     const { data } = await octokit.repos.createOrUpdateFileContents({
       // replace the owner and email with your own details
       owner: "manjularachana",
-      repo: "toupload",
+      repo: "octokit-create-file-example",
       path: "README.md",
       message: "feat: Added OUTPUT.md programatically",
       content: contentEncoded,
